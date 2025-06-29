@@ -105,7 +105,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .hero-content p {
@@ -117,6 +117,27 @@ body {
         padding: 10px 20px;
         margin: 5px;
     }
+
+    .features-gallery img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .features h1 {
+        font-size: 2rem;
+    }
+
+    .features p {
+        font-size: 1rem;
+    }
+
+    .features-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
 }
 
 .hero {
@@ -147,7 +168,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Playfair', serif;
     color: var(--primary-color);
     letter-spacing: 0.3em;
@@ -247,38 +268,68 @@ body {
     color: var(--text-color);
 }
 
-/*.ft-banner {
-    width: 100vw;
-
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   gap: 50px;
-   background-color: #282829;
-   padding: 15px 0;
-   overflow: hidden;
-   position: relative;
-   white-space: nowrap;
+.features a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.ft-banner span {
-    font-size: 20px;
+.features a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    background-color: #1d1d1d;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.banner-content {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+.banner-content span{
+    white-space: nowrap;
+    font-size: 18px;
     font-weight: 600;
     color: #d3cdcd;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.banner:hover .banner-content {
+    animation-play-state: paused;
 }
 
 .features h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
 }
 
 .features p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-}*/
+}
 
 .features-gallery {
     display: flex;
