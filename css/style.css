@@ -705,4 +705,25 @@ body {
     .footer-center {
         margin-top: 0;
     }
+
+    .carousel-track {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .reviews-card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+    }
+
+    .reviews-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .reviews-btn {
+        text-align: center;
+        width: 100%;
+    }
 }
